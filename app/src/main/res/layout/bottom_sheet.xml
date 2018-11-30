@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:fitsSystemWindows="true"
+    android:elevation="24dp">
+
+    <RelativeLayout
+        android:id="@+id/topBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/closeDialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Friday, Nov 30, 2018"
+            android:layout_toRightOf="@id/closeDialog"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textStyle="italic"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack"
+        android:layout_below="@id/topBarLayout"/>
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_below="@id/divider1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Arup Sarkar"
+            style="@style/TextStyle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Joy Prakash Das"
+            style="@style/TextStyle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sayan Mukherjee"
+            style="@style/TextStyle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ashutosh Chakrabarty"
+            style="@style/TextStyle"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack"
+        android:layout_below="@id/nameLayout"/>
+
+    <RelativeLayout
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/divider2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>
